@@ -1,4 +1,4 @@
-##Local Group: Mushy bread
+## Local Group: Mushy bread
 
 ## Members:
  - Patrick Fenger
@@ -7,9 +7,9 @@
  - Martin Lodahl 
 -----------------------------------------------------------------
 
-# Assignment 1(deadline: 25.02.2018)
+# Assignment 1 (deadline: 25.02.2018)
 
-##Assignment group: 30cm Python
+## Assignment group: 30cm Python
 
 
 ## Data Set A:
