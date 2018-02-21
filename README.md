@@ -1,22 +1,24 @@
-# Assignment 1 (27.02.2018)
+##Local Group: Mushy bread
 
-# Group: Mushy bread
-
-# Members:
+## Members:
  - Patrick Fenger
  - Pravien Thaveenrasingam
  - Sean Altoft
  - Martin Lodahl 
+-----------------------------------------------------------------
+
+# Assignment 1(deadline: 25.02.2018)
+
+##Assignment group: 30cm Python
 
 
-
-## Data Set A (30cm Python:
+## Data Set A:
 
 Question 1: (yes/no answer)
 
 Question 2: (Hvilken var den typiske voldtype i årene 1994-2004-2014)
 
-## Data set B (30cm Python:
+## Data set B:
 
 Question 3:
 
