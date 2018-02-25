@@ -10,11 +10,16 @@ Eksampel : python exercise_v2.py 'https://ucr.fbi.gov/crime-in-the-u.s/2013/crim
 ## Imports : 
 
 Our solution uses the following imports : 
+
 import xlrd
+
 import matplotlib.pyplot as plt
+
 import re
+
 import webget
 from collections import Counter
+
 import sys
 
 I think the only modules you need to download is xlrd and webget, because our webget return the path of the downloaded file.
