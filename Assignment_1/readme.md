@@ -1,3 +1,27 @@
+##How to run pyton file : 
+
+The file you need to run, to generate the output stated below is exercise_v2.py.
+The to url should be given as arguments.
+
+its important that dataset 1 is given as first argument and dataset 2 as second argument: 
+
+Eksampel : python exercise_v2.py 'https://ucr.fbi.gov/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/tables/1tabledatadecoverviewpdf/table_1_crime_in_the_united_states_by_volume_and_rate_per_100000_inhabitants_1994-2013.xls/output.xls' 'https://ucr.fbi.gov/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/tables/table-8/table_8_offenses_known_to_law_enforcement_by_state_by_city_2013.xls'
+
+##Imports : 
+
+Our solution uses the following imports : 
+import xlrd
+import matplotlib.pyplot as plt
+import re
+import webget
+from collections import Counter
+import sys
+
+I think the only modules you need to download is xlrd and webget, because our webget return the path of the downloaded file.
+The webget modules can be downloaded from this link : https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_1/webget.py
+
+
+
 Dataset 1 :
 
 Q1: Has the crime decreased or increased over the last 20 years?
