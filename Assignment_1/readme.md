@@ -22,11 +22,8 @@ from collections import Counter
 
 import sys
 
-I think the only modules you need to download is xlrd and webget. The reason why you need to use our webget is because, our webget returns the filename of the downloaded file.
-
-The webget modules can be downloaded from this link : https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_1/webget.py
-
-
+The only module that doesnt come as standard is xlrd, so you have do download that.
+I have placed a webget.py file in the repo and this is the webget that is used in the project. The reason why have added this is because our webget returns the filename. 
 
 ## Dataset 1 :
 
