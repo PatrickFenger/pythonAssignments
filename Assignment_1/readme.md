@@ -22,24 +22,28 @@ The webget modules can be downloaded from this link : https://github.com/Patrick
 
 
 
-Dataset 1 :
+## Dataset 1 :
 
-Q1: Has the crime decreased or increased over the last 20 years?
+### Q1: Has the crime decreased or increased over the last 20 years?
 ![alt text](https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_1/Figure_1.png)
 
 We can see that the amout of crimes commited has been decresing over the year.
 
-Q2: Has the type of crime changed? 
+### Q2: Has the type of crime changed? 
 
 {1994: "'Property  crime'", 1995: "'Property  crime'", 1996: "'Property  crime'", 1997: "'Property  crime'", 1998: "'Property  crime'", 1999: "'Property  crime'", 2000: "'Property  crime'", 2001: "'Property  crime'", 2002: "'Property  crime'", 2003: "'Property  crime'", 2004: "'Property  crime'", 2005: "'Property  crime'", 2006: "'Property  crime'", 2007: "'Property  crime'", 2008: "'Property  crime'", 2009: "'Property  crime'", 2010: "'Property  crime'", 2011: "'Property  crime'", 2012: "'Property  crime'", 2013: "'Property  crime'"}
 
 If we take a look at the data above we can se that the most commited crime type always has been property crime.
 
-Dataset 2 :
+### Q5: Which year was the most crime commited? and which crime occured most times?
 
-Q3: Has the crime moved from one area to another?
+The year with most crimes was in  1994 , and the crime type was 'Property  crime'
 
-Q4: Is there a connection between type of crimes and locations?
+## Dataset 2 :
+
+### Q3: Has the crime moved from one area to another?
+
+### Q4: Is there a connection between type of crimes and locations?
 
 If we take a look at the result below, we can se that the there isnt a connection between the crime and location , because the most common crime is property crime in all states.
 
@@ -120,7 +124,3 @@ If we take a look at the result below, we can se that the there isnt a connectio
 'WISCONSIN' [("'Property crime'", 64023752)] 
 
 'WYOMING' [("'Property crime'", 64279681)] 
-
-Q5: Which year was the most crime commited? and which crime occured most times?
-
-The year with most crimes was in  1994 , and the crime type was 'Property  crime'
