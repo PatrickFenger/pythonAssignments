@@ -3,15 +3,12 @@ import matplotlib.pyplot as plt
 import re
 import webget
 from collections import Counter
-url ="https://ucr.fbi.gov/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/tables/1tabledatadecoverviewpdf/table_1_crime_in_the_united_states_by_volume_and_rate_per_100000_inhabitants_1994-2013.xls/output.xls"
-#print(os.system("s"))
-url2 = "https://ucr.fbi.gov/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/tables/table-8/table_8_offenses_known_to_law_enforcement_by_state_by_city_2013.xls"
-
-
+import sys
 
 # This fuction donwnload a xls file and return xl sheet object
 def _get_sheet(url):
-    xl_workbook = xlrd.open_workbook(webget.download(url))
+    file_name = webget.download(url)
+    xl_workbook = xlrd.open_workbook(file_name)
     sheet_names = xl_workbook.sheet_names()
 
     xl_sheet = xl_workbook.sheet_by_name(sheet_names[0])
@@ -58,7 +55,6 @@ def question_2(url):
                 col_value = list(str(xl_sheet.cell(3, col_idx)).split(":"))
                 most_common_crime = col_value[1].replace('\\n', ' ')
         dict[int(key)] = most_common_crime
-    print(dict)
     return dict
 
 #Question 5
@@ -112,3 +108,17 @@ def _most_frequent_value(dict):
                 arts = crimtype
                 c[arts] += 1
         print(key,str(c.most_common(1)),"\n")
+
+
+if __name__ == "__main__":
+
+    url1 = sys.argv[1]
+    url2 = sys.argv[2]
+
+    #url2 = str(sys.argv[1])
+    question_1(url1,True)
+    print(question_2(url1))
+    print("\n")
+    question_4(url2)
+    print("\n")
+    question_5(url1)
