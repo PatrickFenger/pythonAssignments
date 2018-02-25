@@ -1,8 +1,8 @@
 Dataset 1 :
 
 Q1: Has the crime decreased or increased over the last 20 years?
+![alt text](https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_1/Figure_1.png)
 
-[logo]: https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_1/Figure_1.png
 
 Q2: Has the type of crime changed? --- --- --- --- Most frequent crime every 10th year (1994, '04, '13)
 
