@@ -23,32 +23,34 @@ from collections import Counter
 import sys
 
 The only module that doesnt come as standard is xlrd, so you have do download that.
-I have placed a webget.py file in the repo and this is the webget that is used in the project. The reason why have added this is because our webget returns the filename. 
+I have placed a webget.py file in the repo and this is the webget that is used in the project. The reason why i have added this, is because our webget returns the filename so it might differ from the webget you have installed. 
 
 ## Dataset 1 :
 
 ### Q1: Has the crime decreased or increased over the last 20 years?
 ![alt text](https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_1/Figure_1.png)
 
-We can see that the amout of crimes commited has been decresing over the year.
+Answer - We can see that the amout of crimes commited has been decreasing over the year.
 
 ### Q2: Has the type of crime changed? 
 
 {1994: "'Property  crime'", 1995: "'Property  crime'", 1996: "'Property  crime'", 1997: "'Property  crime'", 1998: "'Property  crime'", 1999: "'Property  crime'", 2000: "'Property  crime'", 2001: "'Property  crime'", 2002: "'Property  crime'", 2003: "'Property  crime'", 2004: "'Property  crime'", 2005: "'Property  crime'", 2006: "'Property  crime'", 2007: "'Property  crime'", 2008: "'Property  crime'", 2009: "'Property  crime'", 2010: "'Property  crime'", 2011: "'Property  crime'", 2012: "'Property  crime'", 2013: "'Property  crime'"}
 
-If we take a look at the data above we can se that the most commited crime type always has been property crime.
+Answer - If we take a look at the data above we can see that the most commited crime type always has been property crime. So the type of crime has not changed
 
 ### Q5: Which year was the most crime commited? and which crime occured most times?
 
-The year with most crimes was in  1994 , and the crime type was 'Property  crime'
+Answer - The year with most crimes was in  1994 , and the crime type was 'Property  crime'
 
 ## Dataset 2 :
 
 ### Q3: Has the crime moved from one area to another?
 
+Answer - We think that there is not enough data in the dataset to answer this question.
+
 ### Q4: Is there a connection between type of crimes and locations?
 
-If we take a look at the result below, we can se that the there isnt a connection between the crime and location , because the most common crime is property crime in all states.
+Answer - If we take a look at the result below, we can se that the there isnt a connection between the crime and location , because the most common crime is property crime in all states.
 
 'ALABAMA' [("'Property crime'", 1355732)] 
 
