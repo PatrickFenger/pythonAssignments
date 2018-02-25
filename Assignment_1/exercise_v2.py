@@ -112,8 +112,8 @@ def _most_frequent_value(dict):
 
 if __name__ == "__main__":
 
-    url1 = sys.argv[1]
-    url2 = sys.argv[2]
+    url1 = str(sys.argv[1])
+    url2 = str(sys.argv[2])
 
     #url2 = str(sys.argv[1])
     question_1(url1,True)
