@@ -58,6 +58,7 @@ def question_2(url):
                 col_value = list(str(xl_sheet.cell(3, col_idx)).split(":"))
                 most_common_crime = col_value[1].replace('\\n', ' ')
         dict[int(key)] = most_common_crime
+    print(dict)
     return dict
 
 #Question 5
@@ -111,8 +112,3 @@ def _most_frequent_value(dict):
                 arts = crimtype
                 c[arts] += 1
         print(key,str(c.most_common(1)),"\n")
-
-question_1(url,True)
-question_2(url)
-question_4(url2)
-question_5(url)
