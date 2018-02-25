@@ -5,7 +5,11 @@ The to url should be given as arguments.
 
 its important that dataset 1 is given as first argument and dataset 2 as second argument: 
 
+Eksampel without code python exercise_v2.py dataset1 dataset 2
+
 Eksampel : python exercise_v2.py 'https://ucr.fbi.gov/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/tables/1tabledatadecoverviewpdf/table_1_crime_in_the_united_states_by_volume_and_rate_per_100000_inhabitants_1994-2013.xls/output.xls' 'https://ucr.fbi.gov/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/tables/table-8/table_8_offenses_known_to_law_enforcement_by_state_by_city_2013.xls'
+
+When you execute the file a plot will pop up , this is the answer for Question 1. The answers for question 2 ,4 and 5 can be viewed in the terminal. But these will first be shown whe you have pressed the close button on the plot.
 
 ## Imports : 
 
