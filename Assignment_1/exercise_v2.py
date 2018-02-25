@@ -114,11 +114,12 @@ if __name__ == "__main__":
 
     url1 = str(sys.argv[1])
     url2 = str(sys.argv[2])
-
-    #url2 = str(sys.argv[1])
     question_1(url1,True)
+    print("Spørgsmål- 2")
     print(question_2(url1))
     print("\n")
+    print("Spørgsmål- 4")
     question_4(url2)
     print("\n")
+    print("Spørgsmål- 5")
     question_5(url1)
