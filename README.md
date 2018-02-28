@@ -11,7 +11,7 @@
 Below link will activate the download process of the dataset. The file is zipped and therefore needs to be unzipped after downloaded to further engage with the content.
 
 We have already downloaded the file for you and put it in this repo:
-<a href="KoreanConflict.csv">Clicky clicky</a>
+<a href="https://raw.githubusercontent.com/PatrickFenger/pythonAssignments/master/KoreanConflict.csv">Clicky clicky</a>
 
 The overview of the dataset can be found here:
 https://www.kaggle.com/orangutan/koreanconflict/data
