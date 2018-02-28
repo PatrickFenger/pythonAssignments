@@ -8,8 +8,9 @@
 -----------------------------------------------------------------
 
 # Dataset 1
+Below link will activate the download of the dataset. The file is zipped and therefore needs to be unzipped after downloaded to further engage with the content.
 
-The dataset is available here: https://www.kaggle.com/orangutan/koreanconflict/data
+The dataset is available here: https://www.kaggle.com/orangutan/koreanconflict/downloads/koreanconflict.zip/1
 
 Q1: How many soldiers came from a marine corps branch?
 
@@ -20,3 +21,7 @@ Q3: Was there a ethnicity majority throughout the war?
 Q4: Which division had the most casualties?
 
 Q5: Which Home state suffered the most losses?
+
+Should there be questions or doubt, feel free to send me an email:
+
+cph-pf59@cphbusiness.dk
