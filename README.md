@@ -10,7 +10,10 @@
 # Dataset 1
 Below link will activate the download process of the dataset. The file is zipped and therefore needs to be unzipped after downloaded to further engage with the content.
 
-The dataset is available here: https://www.kaggle.com/orangutan/koreanconflict/downloads/koreanconflict.zip/1
+The download is available here: https://www.kaggle.com/orangutan/koreanconflict/downloads/koreanconflict.zip/1
+
+The overview of the dataset can be found here:
+https://www.kaggle.com/orangutan/koreanconflict/data
 
 Q1: How many soldiers entered from a marine corps branch?
 
