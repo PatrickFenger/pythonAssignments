@@ -22,6 +22,6 @@ Q4: Which division had the most casualties?
 
 Q5: Which Home state suffered the most losses?
 
-Should there be questions or doubt, feel free to send me an email:
+Should there be questions or doubt, feel free to send us an email:
 
 cph-pf59@cphbusiness.dk
