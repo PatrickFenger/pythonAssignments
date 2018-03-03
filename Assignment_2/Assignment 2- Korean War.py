@@ -3,8 +3,6 @@ import pandas as pd
 import numpy as np
 import webget as wg
 from glob import glob
-import matplotlib.pyplot as plt
-
 
 wg.download("https://raw.githubusercontent.com/PatrickFenger/pythonAssignments/master/KoreanConflict.csv")
 
