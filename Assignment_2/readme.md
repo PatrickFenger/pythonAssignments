@@ -5,3 +5,19 @@ You need to have a webget with the function download accesible for the file, if 
 
 You will also need to have glob and pandas accesible for the file, you can find them through Google. 
 Or install through your console with for example pip install . 
+
+
+# # Q1 - 
+# Answer 4509 
+
+# # Q2
+# Answer ACTIVE-REGULAR
+
+# # Q3
+# Answer yes, WHITE
+
+# # Q4
+# Answer 38 INF 2 DIV - 1755 lost
+
+# # Q5
+# Answer California - 2582 lost
