@@ -128,14 +128,12 @@ def question_5(filename):
     korean_conf_stat = pd.read_csv(filename)
     dd = korean_conf_stat.as_matrix()
     mask = (dd[0:, 13] != "")
-    print(mask)
     homestates = np.unique(list(dd[mask][:,13]))
     for index,i in enumerate(homestates):
         if i in states.keys():
             homestates[index]=states[i].upper()
     homestates = np.unique(list(homestates))
     casualties = {i: np.size(dd[(dd[:, 13] == i)], 0) for i in homestates if i != "nan"}
-    print(casualties)
     plt.bar(casualties.keys(),casualties.values())
     plt.xticks(rotation='vertical',fontsize=5)
     plt.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.2)
@@ -147,8 +145,9 @@ if __name__ in "__main__":
     filename = download_file(sys.argv[1])
     print(filename)
     question_1(filename)
-    #question_2(filename)
-    #question_3(filename)
-    #question_4(filename)
-    #question_3(filename)
+    question_2(filename)
+    question_3(filename)
+    question_4(filename)
+    question_3(filename)
+    question_5(filename)
 
