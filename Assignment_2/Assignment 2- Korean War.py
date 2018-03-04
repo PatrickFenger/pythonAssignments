@@ -3,7 +3,7 @@ import webget as wg
 import pandas as pd
 from glob import glob
 
-download("https://raw.githubusercontent.com/PatrickFenger/pythonAssignments/master/KoreanConflict.csv")
+wg.download("https://raw.githubusercontent.com/PatrickFenger/pythonAssignments/master/KoreanConflict.csv")
 
 
 milit_files = glob('.\\KoreanCon*')
