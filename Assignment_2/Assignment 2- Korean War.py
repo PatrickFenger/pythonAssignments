@@ -1,10 +1,9 @@
 
-import pandas as pd
-import numpy as np
 import webget as wg
+import pandas as pd
 from glob import glob
 
-wg.download("https://raw.githubusercontent.com/PatrickFenger/pythonAssignments/master/KoreanConflict.csv")
+download("https://raw.githubusercontent.com/PatrickFenger/pythonAssignments/master/KoreanConflict.csv")
 
 
 milit_files = glob('.\\KoreanCon*')
@@ -18,21 +17,22 @@ KC = pd.read_csv(KoreanConflict_csv)
 # Answer 4509 
 
 kcGrouped = KC[KC["BRANCH"]=="MARINE CORPS"]
-len(kcGrouped.index)
+print("Marine Corps: ")
+print(len(kcGrouped.index))
 
 
 # # Q2
 # Answer ACTIVE-REGULAR
 
 kcGrouped = KC.groupby("ENROLLMENT").count()
-kcGrouped.iloc[:,2]
+print(kcGrouped.iloc[:,2])
 
 
 # # Q3
 # Answer yes, WHITE
 
 kcGrouped = KC.groupby("ETHNICITY").count()
-kcGrouped.iloc[:,2]
+print(kcGrouped.iloc[:,2])
 
 
 # # Q4
@@ -41,7 +41,7 @@ kcGrouped.iloc[:,2]
 kcGrouped = KC.groupby("DIVISION").count()
 maxValue = kcGrouped.iloc[:,2].max()
 mask = (kcGrouped.iloc[:,2]==maxValue)
-kcGrouped[mask]
+print("Division : "+kcGrouped[mask].index.values+" had the most losses, with a total off: "+str(kcGrouped[mask].iloc[0,0]))
 
 
 # # Q5
@@ -50,4 +50,4 @@ kcGrouped[mask]
 kcGrouped = KC.groupby("HOME_STATE").count()
 maxValue = kcGrouped.iloc[:,2].max()
 mask = (kcGrouped.iloc[:,2]==maxValue)
-kcGrouped[mask]
+print("The state of : "+kcGrouped[mask].index.values+" had the most losses, with a total off: " +str(kcGrouped[mask].iloc[0,0]))
