@@ -1,5 +1,12 @@
 ## How to run file
+You run the file by entering python assignment_2.py with the file as argument so :
 
+assignment_2.py https://raw.githubusercontent.com/PatrickFenger/pythonAssignments/master/KoreanConflict.csv
+
+Its important that you have panda installed.
+
+When running the file the answers for question 1 and 4 will be showed in the terminal.
+The answer for the other questions an be found in the folder in form of plots.
 
 ## Answers:
 ### Q1: How many soldiers entered from a marine corps branch?
