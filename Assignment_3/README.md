@@ -11,13 +11,18 @@ You run the file by running assignment_3.py
 TOP 3: 
 
 Real Madrid CF             828900000.0 EUR
+
 FC Bayern Munich           741450000.0 EUR
+
 FC Barcelona               737500000.0 EUR
+
 
 BOTTOM 3:
 
 Bray Wanderers               2360000.0 EUR
+
 Limerick FC                  2480000.0 EUR
+
 Drogheda United              2580000.0 EUR
 
 
@@ -28,15 +33,25 @@ ENGLAND W/ 1631 players
 ### Q3:  What is the difference between the release clause and the value of top 10 most valuable players
 
                  name    eur_value  eur_release_clause  rel_value_diff
+
 2              Neymar  123000000.0         236800000.0     113800000.0
+
 1            L. Messi  105000000.0         215300000.0     110300000.0
+
 3           L. Suárez   97000000.0         198900000.0     101900000.0
+
 0   Cristiano Ronaldo   95500000.0         195800000.0     100300000.0
+
 5      R. Lewandowski   92000000.0         151800000.0      59800000.0
+
 7           E. Hazard   90500000.0         174200000.0      83700000.0
+
 11       K. De Bruyne   83000000.0         159800000.0      76800000.0
+
 8            T. Kroos   79000000.0         162000000.0      83000000.0
+
 19          P. Dybala   79000000.0         136300000.0      57300000.0
+
 9          G. Higuaín   77000000.0         127100000.0      50100000.0
 
 ### Q4: What is the frequency of age, height and weight for all players
