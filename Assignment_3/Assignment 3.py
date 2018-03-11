@@ -56,4 +56,6 @@ print(data.groupby(['weight_kg'])['weight_kg'].count())
 
 data['val_wage_diff'] = data['eur_value'] - data['eur_wage']
 val_wage = data.iloc[:, [186]]
-print(val_wage.sum() % val_wage.count())
+#print(val_wage.sum() % val_wage.count()) #Modolus
+#print(val_wage.sum() / val_wage.count()) #Division 
+print(val_wage.sum() // val_wage.count()) #Division to int - no decimals 
