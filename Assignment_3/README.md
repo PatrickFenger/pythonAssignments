@@ -344,4 +344,4 @@ weight_kg
 
 ### Q5: How big is the average difference between value and wage of the players
 
-Average difference is : 8042.0 EURO
+Average difference is : 2_359_007 EURO
