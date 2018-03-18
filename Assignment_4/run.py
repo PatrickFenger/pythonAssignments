@@ -102,7 +102,9 @@ def question_5(file_path):
             if i != '\\N':
                 adult_runtime['runtime'] += int(i)
                 adult_runtime['amount_of_movies'] += 1
-    print("The average runtime of adult movies is: ",adult_runtime['runtime']/adult_runtime['amount_of_movies']," min")
+    print("The average runtime of adult movies is: ",
+          int(adult_runtime['runtime']/adult_runtime['amount_of_movies']),
+          " min")
 
 
 def main(file_path):
