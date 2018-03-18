@@ -1,21 +1,38 @@
 
+## Imports
+
+These are the following imports you will be needing.
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import sys - Standard module
+import webget - In this repo i have added the webget, because, our webget might be different that yours.
+
 ## How to run file
-You run the file by entering python assignment_2.py with the file as argument so :
+So the python file can be executed through the terminal with the following command.
 
-assignment_2.py https://raw.githubusercontent.com/PatrickFenger/pythonAssignments/master/KoreanConflict.csv
+python run.py
 
-Its important that you have panda installed.
+You can add a argument. This argument should be the path to the title.basics.tsv file.
+An example of this could be - 
 
-When running the file the answers for question 1 and 4 will be showed in the terminal.
-The answer for the other questions an be found in the folder in form of plots.
+python run.py path/title.basics.tsv
+
+By doing this the program will use the specified file.
+
+If you dont provide the argument, the script will will look for the title.basics.tsv in the directory where the script is placed. If it doesnt find the file here it will download the file from https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_4/title.basics.tsv
+
+The easiest way to run the program is to fork the repo and call the command - python run.py
+By doing this all the files the script will have the files it needs to run.
 
 ## Answers:
-### Q1: How many soldiers entered from a marine corps branch?
+### Q1: Which year was the most movies released?
+![alt text](https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_4/Figure_1.png)
 
 The year with most movies releases was:  2004
 
 ### Q2: Which year was most series ended?
-![alt text](https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_2.2/q_2.png)
+![alt text](https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_4/figure_2.png)
 
 The year where most series ended was:  2004
 
