@@ -37,7 +37,8 @@ def question_2(file_path):
                 end_year[elm] = 1
             else:
                 end_year[elm] += 1
-        end_year.pop("\\N")
+    # Removes the key \\N
+    end_year.pop("\\N")
     year = max(end_year, key=end_year.get)
     print("The year where most series ended was: ", year)
     #Plot the graph
