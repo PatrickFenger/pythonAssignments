@@ -32,7 +32,7 @@ By doing this all the files the script will have the files it needs to run.
 The year with most movies releases was:  2004
 
 ### Q2: Which year was most series ended?
-![alt text](https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_4/figure_2.png)
+![alt text](https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_4/figur_2.png)
 
 The year where most series ended was:  2004
 
