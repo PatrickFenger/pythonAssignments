@@ -2,10 +2,15 @@
 ## Imports
 
 These are the following imports you will be needing.
+
 import pandas as pd
+
 import numpy as np
+
 import matplotlib.pyplot as plt
+
 import sys - Standard module
+
 import webget - In this repo i have added the webget, because, our webget might be different that yours.
 
 ## How to run file
