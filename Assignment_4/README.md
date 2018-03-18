@@ -51,4 +51,4 @@ The genre the covers the most movies is:  Drama
 
 ### Q5: What is the average runtime on adult films?
 
-The average runtime of adult movies is:  92.765576625387 min
+The average runtime of adult movies is:  92 min
