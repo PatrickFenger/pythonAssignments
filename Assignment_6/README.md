@@ -6,11 +6,11 @@ https://www.kaggle.com/mousehead/songlyrics/data
 
 The following dependencies should be intalled on your system, either via conda install of pip install through your terminal:
 
-pandas\n
-webget/n
-collections
-re
-matplotlib.pyplot
+- pandas
+- webget
+- collections
+- re
+- matplotlib
 
 Clone the project from our repository, use the "cd" command to get into our "Assignment_6" folder. From here run the project from command prompt by typing "python run.py"
 
