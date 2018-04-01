@@ -36,7 +36,9 @@ After removing these words, we concluded that the most used word is: "Love"
 
 ### Q2:
 
-For this question we chose a song called "It's so cool". The amount of words in the song is 337
+Below we provided a visual presentation.
+
+![alt text](https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_6/Figure_2.png)
 
 ### Q3: What song uses the word "X" the most times?
 
