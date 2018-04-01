@@ -2,10 +2,12 @@ import pandas as pd
 import webget
 import collections
 import re
+import operator
 import matplotlib.pyplot as plt
 
 temp_list = []
 
+question2_dict = {}
 question3_dict = {"name": "no song", "amount": 0}
 
 question4_dict = {"words": 0, "songs": 0}
@@ -37,11 +39,16 @@ def question_1(dd):
 
 
 def question_2(dd,title="It's So Cool"):
-        for i in dd:
-            if title in i:
-                length = len(re.findall(r'.(\w+[\']*)+',str(i[3]).replace('\n', '').replace('\r', '').replace('\\n', '').
-                                        upper()))
-                print("Question-2: ", "The amount of words in ", title, " is ", length)
+    global question2_dict
+    for i in dd:
+        if title in i:
+            words_in_song = re.findall(r'.(\w+[\']*)+',str(i[3]).replace('\n', '').replace('\r', '').replace('\\n', '').
+                                    upper())
+            for word in words_in_song:
+                if word in question2_dict:
+                    question2_dict[word] +=1
+                else:
+                    question2_dict[word] = 1
 
 
 def question_4(dd):
@@ -76,8 +83,16 @@ def main():
         question_4(dd)
         question_3(dd)
         question_5(dd)
+
+
     print("Question-1: The most used word is", max(collections.Counter(temp_list), key=collections.Counter(temp_list).
                                                    get))
+
+    sorted_Q2_dict = sorted(question2_dict.items(), key=operator.itemgetter(1),reverse=True)[:10]
+    plt.title("the number of times the ten most repeated words are repeated in It's so Cool")
+    plt.scatter(*zip(*sorted_Q2_dict))
+    plt.show()
+
     print("Question-3: ", question3_dict.get("name"))
     print("Question-4: ", round(question4_dict.get("words")/question4_dict.get("songs"),2))
     plt.bar(question5_dict.keys(), question5_dict.values())
