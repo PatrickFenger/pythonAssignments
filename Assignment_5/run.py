@@ -20,7 +20,7 @@ def file_reader():
 
 def question_3(dd, word="LOVE"):
     for i in dd:
-        temp_value = re.findall(r'(\w+[\']*)+',str(i[3]).replace('\n', '').replace('\r', '').replace('\\n', '').upper())
+        temp_value = re.findall(r'.(\w+[\']*)+',str(i[3]).replace('\n', '').replace('\r', '').replace('\\n', '').upper())
         if word.upper() in temp_value:
             amount = collections.Counter(temp_value).get(word.upper())
             if amount > question3_dict.get("amount"):
@@ -30,7 +30,7 @@ def question_3(dd, word="LOVE"):
 
 def question_1(dd):
     global temp_list
-    temp = re.findall(r'(\w+[\']*)+', str(dd[:, 3]).replace('\n', '').replace('\r', '').replace('\\n', '').upper())
+    temp = re.findall(r'.(\w+[\']*)+', str(dd[:, 3]).replace('\n', '').replace('\r', '').replace('\\n', '').upper())
     non_valid_word = ["THE", "I", "YOU", 'AND', 'TO', 'A', 'ME', "T", "S", 'MY', 'IN', 'IT', 'M', "ON", 'THAT', 'OF',
                       'YOUR', 'ALL', 'FOR', 'WE', 'IS', 'BE', 'KNOW', 'UP', 'LIKE', 'BUT', 'GET', 'SO', 'WITH', ]
     temp_list += [elm for elm in temp if elm not in non_valid_word]
@@ -39,21 +39,21 @@ def question_1(dd):
 def question_2(dd,title="It's So Cool"):
         for i in dd:
             if title in i:
-                length = len(re.findall(r'(\w+[\']*)+',str(i[3]).replace('\n', '').replace('\r', '').replace('\\n', '').
+                length = len(re.findall(r'.(\w+[\']*)+',str(i[3]).replace('\n', '').replace('\r', '').replace('\\n', '').
                                         upper()))
                 print("Question-2: ", "The amount of words in ", title, " is ", length)
 
 
 def question_4(dd):
     for i in dd[:,3]:
-        length = len(re.findall(r'(\w+[\']*)+', str(i).replace('\n', '').replace('\r', '').replace('\\n', '').upper()))
+        length = len(re.findall(r'.(\w+[\']*)+', str(i).replace('\n', '').replace('\r', '').replace('\\n', '').upper()))
         question4_dict["words"] += length
         question4_dict["songs"] += 1
 
 
 def question_5(dd):
     for i in dd[:, 3]:
-        length = len(re.findall(r'(\w+[\']*)+', str(i).replace('\n', '').replace('\r', '').replace('\\n', '').upper()))
+        length = len(re.findall(r'.(\w+[\']*)+', str(i).replace('\n', '').replace('\r', '').replace('\\n', '').upper()))
         if length <= 50:
             question5_dict['0-50'] += 1
         elif 50 < length <= 100:
