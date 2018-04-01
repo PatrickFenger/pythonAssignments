@@ -32,7 +32,7 @@ Upon running the file, the program will conduct a download process to retrive th
 To make the answer a bit more solid we invalidated the following words:
 "THE", "I", "YOU", 'AND', 'TO', 'A', 'ME', "T", "S", 'MY', 'IN', 'IT', 'M', "ON", 'THAT', 'OF', 'YOUR', 'ALL', 'FOR', 'WE', 'IS', 'BE', 'KNOW', 'UP', 'LIKE', 'BUT', 'GET', 'SO', 'WITH'
 
-After removing these words, we can conclude tat the most used word is: "Love"
+After removing these words, we concluded that the most used word is: "Love"
 
 ### Q2:
 
@@ -50,6 +50,6 @@ The average number of words per song is 220.13.
 
 Below we provided a visual presentation.
 
-![alt text]https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_6/Figure_1.png
+![alt text](https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_6/Figure_1.png)
 
 
