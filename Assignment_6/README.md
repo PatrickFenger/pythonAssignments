@@ -6,8 +6,8 @@ https://www.kaggle.com/mousehead/songlyrics/data
 
 The following dependencies should be intalled on your system, either via conda install of pip install through your terminal:
 
-pandas
-webget
+pandas\n
+webget/n
 collections
 re
 matplotlib.pyplot
