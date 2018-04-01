@@ -1,8 +1,8 @@
-#Dataset
+## Dataset
 
 https://www.kaggle.com/mousehead/songlyrics/data
 
-#Dependencies & Info
+## Dependencies & Info
 
 The following dependencies should be intalled on your system, either via conda install of pip install through your terminal:
 
@@ -16,7 +16,7 @@ Clone the project from our repository, use the "cd" command to get into our "Ass
 
 Upon running the file, the program will conduct a download process to retrive the neccesary dataset & produce answers for the questions listed below.
 
-##Questions
+## Questions
 
 1. What is the most used words in the songs?
 2. How many times are each word repeated in a song? (Or        perhaps - what song repeats the top 4 repeated words        the most? - finds the most repetitive song)
@@ -50,6 +50,6 @@ The average number of words per song is 220.13.
 
 Below we provided a visual presentation.
 
-![alt text]https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_5/Figure_1.png
+![alt text]https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_6/Figure_1.png
 
 
