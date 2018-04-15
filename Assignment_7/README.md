@@ -1,6 +1,6 @@
 ## Dataset
 
-https://www.kaggle.com/mousehead/songlyrics/data
+https://github.com/mathiasjepsen/PythonDatasetAssignment/raw/master/ks-projects-201801.csv
 
 ## Dependencies & Info
 
@@ -32,10 +32,12 @@ Upon running the file, the program will conduct a download process to retrive th
 
 ### Q1:
 
+![alt text](https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_7/q1.png)
 Dance is the most successful main category 62,05%
 
 ### Q2:
 
+![alt text](https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_7/q2.png)
 Dance is the most proposed category.
 
 ### Q3: 
@@ -44,7 +46,7 @@ The pledged median of successful projects is $5107,25
 
 ### Q4:
 
-
+![alt text](https://github.com/PatrickFenger/pythonAssignments/blob/master/Assignment_7/q4.png)
 
 ### Q5: 
 
