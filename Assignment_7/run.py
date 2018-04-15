@@ -7,14 +7,28 @@ from glob import glob
 # Setting up useable csv file
 webget.download("https://github.com/mathiasjepsen/PythonDatasetAssignment/raw/master/ks-projects-201801.csv")
 
-filed = glob('.\\ks-projects-201801.csv*')
-ks_projects = filed[0]
-ks_df = pd.read_csv(ks_projects)
+#filed = glob('.\\ks-projects-201801.csv*')
+#ks_projects = filed[0]
+ks_df = pd.read_csv("ks-projects-201801.csv")
 ks_matrix = ks_df.as_matrix()
 
 
 # See columns for later use
 # print(ks_df.dtypes)
+def question_4():
+    mask = ((ks_matrix[:,9] == "successful") & (ks_matrix[:,13] > 5000.00))
+    main_success, success_count = np.unique(
+        ks_matrix[mask][:, 2], return_counts=True)
+    plt.figure("Question 4")
+    plt.title("number of successfully funded projects with more than 5.000$ pledged pr category")
+    plt.xlabel("Category")
+    plt.ylabel("successfully funded project")
+    plt.bar(main_success, success_count)
+    plt.show()
+
+def question_5():
+    under_10k = ((ks_matrix[:, 14] <= 10.000))
+
 
 def question_1():
     _, count = np.unique(ks_matrix[:,3], return_counts=True)
@@ -22,6 +36,7 @@ def question_1():
     successful_ks_projects = ks_matrix[mask]
     main_success, success_count = np.unique(
         successful_ks_projects[:,3], return_counts=True)
+    print(main_success,success_count)
     success_rate = (success_count / count) * 100
 
     plt.figure("Question 1")
@@ -65,3 +80,4 @@ def question_3():
 question_1()
 question_2()
 question_3()
+question_4()
