@@ -82,12 +82,16 @@ def question_5():
     mask = (ks_matrix[:, 3] == category)
     max_goal = ks_matrix[mask][:,14]
     max_goal.sort()
-    max_goal = [i//1000 for i in max_goal]
+    max_goal = [(int(i//1000)) for i in max_goal]
     most_succesfull_goal = (0,0)
+    last_digits = [0,0,0,0,0,0,0,0,0,0]
     for i in range(0, int(max_goal[-1])):
-        print(i)
-        numbers = [j for j in max_goal if j<i+10 and j>i]
-        sm = len(numbers)
+        numbers = [j for j in max_goal if j==i]
+        amount_of_current=len(numbers)
+        del max_goal[:amount_of_current]
+        last_digits.insert(0, amount_of_current)
+        del last_digits[-1]
+        sm = sum(last_digits)
         if sm > most_succesfull_goal[1]:
             most_succesfull_goal = (i, sm)
 
@@ -95,9 +99,8 @@ def question_5():
     print("The range with most succesfull goal is : " + (str(most_succesfull_goal[0])) + " - "+(str(most_succesfull_goal[0]+10))+"k$")
     print("With : "+(str(most_succesfull_goal[1])) +" succesfull projects")
 
-
-#question_1()
-#question_2()
-#question_3()
-#question_4()
+question_1()
+question_2()
+question_3()
+question_4()
 question_5()
