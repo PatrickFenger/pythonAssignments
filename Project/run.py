@@ -5,6 +5,8 @@ from glob import glob
 
 import cv2
 
+import profile
+
 image = cv2.imread('./100X100_2.jpg')
 
 def dist(x,y):
@@ -30,7 +32,7 @@ def calculate_Dist(image):
 
     return temp_image
 
-def calculate_Dist2(image): #Effektivt gør det samme som calculate_Dist . bare med en list comprehension
+def calculate_Dist2(image): #Effektivt gør det samme som calculate_Dist . bare med en list comprehension men med N2 + N speed.
     shape_of_image = image.shape #= (x,y,3) (fordi rgb er 3 farver blandet).
     temp_image = np.zeros((shape_of_image[0], shape_of_image[1]))
     temp_pixels = [dist(image[x,y], image[xx,yy]) for x in range(shape_of_image[0]) for y in range(shape_of_image[1]) for xx in range(shape_of_image[0]) for yy in range(shape_of_image[1]) if(x!=xx or y!=yy)]
@@ -42,11 +44,20 @@ def calculate_Dist2(image): #Effektivt gør det samme som calculate_Dist . bare 
 
     return temp_image
 
-#image = [[[100,100,100]
-#        ]]
-#calculate_Dist(image)
-#print(image.shape)
-calc2 = calculate_Dist2(image)
-calc = calculate_Dist(image)
+calc2 = None
+calc = None
+profile.runctx(
+        'print(calculate_Dist2(n)); print()',
+        globals(),
+        {'n': image},
+        )
+#Tested to 5,531seconds on a 26*26 pixel
+profile.runctx(
+        'print(calculate_Dist(n)); print()',
+        globals(),
+        {'n': image},
+        )
+#Tested to 5,766 seconds on a 26*26 pixel
+#calc2 = calculate_Dist2(image)
+#calc = calculate_Dist(image)
 print(f'(calc2: {calc2}; calc: {calc})')
-print(calc2==calc)
