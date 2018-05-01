@@ -30,7 +30,7 @@ def calculate_Dist(image):
 
     return temp_image
 
-def calculate_Dist2(image):
+def calculate_Dist2(image): #Effektivt gør det samme som calculate_Dist . bare med en list comprehension
     shape_of_image = image.shape #= (x,y,3) (fordi rgb er 3 farver blandet).
     temp_image = np.zeros((shape_of_image[0], shape_of_image[1]))
     temp_pixels = [dist(image[x,y], image[xx,yy]) for x in range(shape_of_image[0]) for y in range(shape_of_image[1]) for xx in range(shape_of_image[0]) for yy in range(shape_of_image[1]) if(x!=xx or y!=yy)]
