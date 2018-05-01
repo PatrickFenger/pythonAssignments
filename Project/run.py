@@ -17,7 +17,6 @@ def calculate_Dist(image):
     temp_image = np.zeros((shape_of_image[0], shape_of_image[1]))
     for x in range(shape_of_image[0]): #Samme som den første akse
         for y in range(shape_of_image[1]): #Samme som den anden akse
-            print(f'(X = {x}; Y = {y})')
 
             sik = 0
             for xx in range(shape_of_image[0]):
@@ -31,8 +30,22 @@ def calculate_Dist(image):
 
     return temp_image
 
+def calculate_Dist2(image):
+    #Cordi1 = [[int(i) for i in line.split()] for line in data]
+    shape_of_image = image.shape #= (x,y,3) (fordi rgb er 3 farver blandet).
+    temp_image = np.zeros((shape_of_image[0], shape_of_image[1]))
+    temp_pixels = [dist(image[x,y], image[xx,yy]) for x in range(shape_of_image[0]) for y in range(shape_of_image[1]) for xx in range(shape_of_image[0]) for yy in range(shape_of_image[1]) if(x!=xx or y!=yy)]
+    #LISTE UDEN SUMMERING.
+    pixels = shape_of_image[0] * shape_of_image[1]
+    for i in range(pixels):
+        summed = np.sum(temp_pixels[i*(pixels-1):(i*(pixels-1))+(pixels-1)])
+        temp_image[i//shape_of_image[1],i%shape_of_image[1]] = summed
+
+    return temp_image
+
 #image = [[[100,100,100]
 #        ]]
 #calculate_Dist(image)
-print(image.shape)
+#print(image.shape)
+print(calculate_Dist2(image))
 print(calculate_Dist(image))
