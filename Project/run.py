@@ -7,7 +7,7 @@ import cv2
 
 import profile
 
-image = cv2.imread('./100X100_2.jpg')
+image = cv2.imread('./wallpaper-2.jpg')
 
 def dist(x,y):
     return np.sqrt(np.sum((x-y)**2))
@@ -44,15 +44,15 @@ def calculate_Dist2(image): #Effektivt gør det samme som calculate_Dist . bare 
 
     return temp_image
 
-calc2 = None
-calc = None
-profile.runctx(
+#calc2 = None
+#calc = None
+"""profile.runctx(
         'print(calculate_Dist2(n)); print()',
         globals(),
         {'n': image},
         )
 #Tested to 5,531seconds on a 26*26 pixel
-profile.runctx(
+#profile.runctx(
         'print(calculate_Dist(n)); print()',
         globals(),
         {'n': image},
@@ -60,4 +60,12 @@ profile.runctx(
 #Tested to 5,766 seconds on a 26*26 pixel
 #calc2 = calculate_Dist2(image)
 #calc = calculate_Dist(image)
-print(f'(calc2: {calc2}; calc: {calc})')
+#print(f'(calc2: {calc2}; calc: {calc})')
+"""
+#converts the imgae to LAB
+#image = cv2.cvtColor(image,cv2.COLOR_RGB2LAB)
+imageBGR = cv2.cvtColor(image,cv2.COLOR_BGR2LAB) #We're keeping BGR, as it's default for cv2.imread(image)
+#cv2.imshow("RGB", image)
+cv2.imshow("BGR", image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
