@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from glob import glob
+from skimage.segmentation import slic
 
 import cv2
 
@@ -64,8 +65,11 @@ def calculate_Dist2(image): #Effektivt gør det samme som calculate_Dist . bare 
 """
 #converts the imgae to LAB
 #image = cv2.cvtColor(image,cv2.COLOR_RGB2LAB)
-imageBGR = cv2.cvtColor(image,cv2.COLOR_BGR2LAB) #We're keeping BGR, as it's default for cv2.imread(image)
+imageLAB = cv2.cvtColor(image,cv2.COLOR_BGR2LAB) #We're keeping BGR, as it's default for cv2.imread(image)
 #cv2.imshow("RGB", image)
-cv2.imshow("BGR", image)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+#cv2.imshow("BGR", image)
+#cv2.waitKey(0)
+#cv2.destroyAllWindows()
+hist = cv2.calcHist([imageLAB], [0], None, [256], [0, 256])
+
+plt.hist(imageLAB.ravel(),256,[0,256]); plt.show()
